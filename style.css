@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4F7FA;
+    color:#1F2937;
+    margin:0;
+}
+.hero{
+    background-color: #123B5D;
+    color:#FFFFFF;
+    text-align: center;
+    padding:30px;
+
+}
+.hero h1{
+    font-size: 30px;
+}
+.hero p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.stats-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-top: 20px;
+    gap:20px;
+}
+.card{
+    background-color: #FFFFFF;
+    padding:25px;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+.card p{
+    color: #123B5D;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.today-section{
+    margin-top: 20px;
+}
+.today-section h2{
+    margin-bottom: 20px;
+}
+.today-cards{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+.today-cards .card{
+    width:250px;
+}
+.update-section{
+    text-align: center;
+    margin-top: 20px;
+}
+@media(max-width:768px){
+    .stats-section{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .hero h1{
+        font-size:28px;
+    }
+    .hero p{
+        font-size:18px;
+    }
+    .today-cards{
+        flex-direction: column;
+        align-items: center;
+        gap:30px;
+    }
+}
+@media (max-width: 480px) {
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+    .hero h1{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .today-cards{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+}

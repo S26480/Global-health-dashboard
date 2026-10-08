@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Health Dashboard</title>
+
+    <!--Link the external CSS file-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!--Dashboard Header-->
+    <header class="hero">
+        <h1>COVID-19 GLOBAL DASHBOARD</h1>
+        <p>Global pandemic statistics at a glance</p>
+    </header>
+
+    <main>
+
+        <!--Main statistics-->
+
+        <section class="stats-section">
+            <div class="card">
+                <h3>TOTAL CASES</h3>
+                <p id="totalCases">-</p>
+            </div>
+
+            <div class="card">
+                <h3>DEATHS</h3>
+                <p id="deaths">-</p>
+            </div>
+
+            <div class="card">
+                <h3>RECOVERED</h3>
+                <p id="recovered">-</p>
+            </div>
+
+            <div class="card">
+                <h3>ACTIVE</h3>
+                <p id="active">-</p>
+            </div>
+
+            <div class="card">
+                <h3>CRITICAL</h3>
+                <p id="critical">-</p>
+            </div>
+
+            <div class="card">
+                <h3>COUNTRIES AFFECTED</h3>
+                <p id="countriesAffected">-</p>
+            </div>
+        </section>
+
+        <!--Today's statistics-->
+        <section class="today-section">
+
+            <h2>Today's Statistics</h2>
+
+            <div class="today-cards">
+
+                <div class="card">
+                    <h3>Today's cases</h3>
+                    <p id="todayCases"></p>
+                </div>
+            
+                <div class="card">
+                    <h3>Today's Deaths</h3>
+                    <p id="todayDeaths"></p>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <!--Last Updated-->
+
+        <section class="update-section">
+            <p>Last Updated: <span id="lastUpdated">-</span></p>
+        </section>
+    </main>
+
+<!--Link the external JavaScript file-->    
+<script src="./script.js"></script>    
+</body>
+</html>
